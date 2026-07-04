@@ -6,9 +6,10 @@
 export const ALBUMS = [
   { id: 'halloween', title: 'Halloween', artist: 'Soundtracks', year: 2026, order: 1 },
   { id: 'mayhem', title: 'MAYHEM', artist: 'Lady Gaga', year: 2025, order: 2 },
-  { id: 'mgk-2026', title: 'mgk (2026)', artist: 'mgk', year: 2026, order: 3 },
-  { id: 'mgk-catalog', title: 'mgk', artist: 'mgk', order: 4 },
-  { id: 'limp-bizkit', title: 'Limp Bizkit', artist: 'Limp Bizkit', order: 5 },
+  { id: 'dua-lipa', title: 'Future Nostalgia', artist: 'Dua Lipa', year: 2020, order: 3 },
+  { id: 'mgk-2026', title: 'mgk (2026)', artist: 'mgk', year: 2026, order: 4 },
+  { id: 'mgk-catalog', title: 'mgk', artist: 'mgk', order: 5 },
+  { id: 'limp-bizkit', title: 'Limp Bizkit', artist: 'Limp Bizkit', order: 6 },
   { id: 'practice', title: 'Practice', artist: 'Lessons', order: 99 },
 ];
 
@@ -51,6 +52,41 @@ export const CATALOG = [
       { midi: 69, beat: 14, duration: 1 }, { midi: 67, beat: 15, duration: 1 },
     ],
   }),
+
+  READY({
+    id: 'levitating',
+    title: 'Levitating',
+    albumId: 'dua-lipa',
+    emoji: '◇',
+    author: 'Dua Lipa',
+    tempo: 103,
+    timeSignature: '4/4',
+    notes: [
+      { midi: 67, beat: 0, duration: 0.5 }, { midi: 67, beat: 0.5, duration: 0.5 },
+      { midi: 69, beat: 1, duration: 0.5 }, { midi: 67, beat: 1.5, duration: 0.5 },
+      { midi: 64, beat: 2, duration: 0.5 }, { midi: 67, beat: 2.5, duration: 0.5 },
+      { midi: 69, beat: 3, duration: 1 },
+      { midi: 71, beat: 4, duration: 0.5 }, { midi: 69, beat: 4.5, duration: 0.5 },
+      { midi: 67, beat: 5, duration: 0.5 }, { midi: 64, beat: 5.5, duration: 0.5 },
+      { midi: 62, beat: 6, duration: 2 },
+      { midi: 64, beat: 8, duration: 0.5 }, { midi: 67, beat: 8.5, duration: 0.5 },
+      { midi: 69, beat: 9, duration: 0.5 }, { midi: 71, beat: 9.5, duration: 0.5 },
+      { midi: 72, beat: 10, duration: 1 }, { midi: 71, beat: 11, duration: 1 },
+      { midi: 69, beat: 12, duration: 0.5 }, { midi: 67, beat: 12.5, duration: 0.5 },
+      { midi: 64, beat: 13, duration: 0.5 }, { midi: 67, beat: 13.5, duration: 0.5 },
+      { midi: 69, beat: 14, duration: 2 },
+      { midi: 67, beat: 16, duration: 0.5 }, { midi: 67, beat: 16.5, duration: 0.5 },
+      { midi: 69, beat: 17, duration: 0.5 }, { midi: 67, beat: 17.5, duration: 0.5 },
+      { midi: 64, beat: 18, duration: 0.5 }, { midi: 67, beat: 18.5, duration: 0.5 },
+      { midi: 69, beat: 19, duration: 1 },
+      { midi: 71, beat: 20, duration: 1 }, { midi: 72, beat: 21, duration: 1 },
+      { midi: 71, beat: 22, duration: 1 }, { midi: 69, beat: 23, duration: 1 },
+    ],
+  }),
+
+  PH('dua-houdini', 'Houdini', 'dua-lipa', { artist: 'Dua Lipa', year: 2024, tempo: 120 }),
+  PH('dua-training-season', 'Training Season', 'dua-lipa', { artist: 'Dua Lipa', year: 2024, tempo: 116 }),
+  PH('dua-dont-start-now', "Don't Start Now", 'dua-lipa', { artist: 'Dua Lipa', year: 2020, tempo: 124 }),
 
   READY({
     id: 'celebrity',
